@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+header {
+    position: sticky;
+    top: 0;
+    background-image: linear-gradient( #B75AE6, #eee);
+    padding: 30px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    z-index: 1;
+    border-bottom: 5px solid rgba(180, 38, 236, 0.021);
+    text-align: center;
+    
+}   
+
+
+body{
+    background-color: rgba(121, 112, 112, 0.863);
+    display:block
+
+}
+
+
+
+.titulo__principal--listas{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #ffffff;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px -12px rgb(0, 0, 0 );
+    margin-top: 15px;
+    margin-bottom: 15px;
+   
+}
+
+
+.card__tittle{
+    background-color: rgba(155, 12, 238, 0.904);
+    color:  ghostwhite;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card__description{
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+.card__header{
+    
+    position: relative;
+
+}
+
+.card__header-tag{
+    padding: 12px;
+    color: #eee;
+    background-color: rgb(0, 0, 0, 75%);
+    position: absolute;
+    right: 0;
+    border-left-width: 10px;
+}
+
+
+
+.card__header--img {
+    width: 300px;
+    height: 350px;
+    margin-bottom: 20px;
+}
+
+.card__link{
+    background-color: #B75AE6;
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    color: azure;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+footer{
+    margin-top: 20px;
+    background-color: #B75AE6;
+}
+
+
+
+.whatsapp{
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+}
+
+.productos{
+    margin-top: 60px;
+    padding: 0 20px;
+}
+
+.productos__Ampli{
+    margin-top: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 30px;
+    color: #B75AE6;
+    border: rgb(0, 0, 0 ) solid;
+    background-color: #eee;
+}
+
+.productos__contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+}
+
+@media (max-width: 1265px ){
+    .productos__contenedor{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 992px ){
+    .productos__contenedor{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
